@@ -1,0 +1,389 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: whitesmoke;
+    color: purple;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+.navbar .logo span {
+    color: goldenrod;
+}
+
+.navbar .nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.navbar .nav-links a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #000;
+    padding: 5px 10px;
+    transition: all 0.3s ease;
+}
+
+.navbar .nav-links a:hover {
+    background-color: purple;
+    color: #fff;
+    border-radius: 5px;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px 100px; 
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6));
+    color: white;
+}
+.hero-content {
+    max-width: 50%;
+}
+.hero h2 {
+    font-size: 48px; 
+    margin-bottom: 20px;
+}
+.hero p {
+    font-size: 20px; 
+    margin-bottom: 20px;
+}
+.hero-buttons button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    background-color: #ffd700;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    color: #4a148c;
+    border-radius: 5px;
+}
+.hero-buttons button:hover {
+    background-color: #fff;
+}
+.hero-image img {
+    max-width: 40%;
+    border-radius: 10px;
+    background-size: cover;
+}
+
+/* Appointment Section */
+.appointment {
+    padding: 50px 0;
+    background: #fff;
+}
+.appointment h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 28px;
+    color: #4a148c;
+}
+.appointment form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+.appointment form label {
+    font-weight: bold;
+}
+.appointment form input, .appointment form select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.appointment form button {
+    padding: 10px 20px;
+    background-color: #4a148c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.appointment form button:hover {
+    background-color: #ffd700;
+    color: #4a148c;
+}
+
+/* Services Section */
+.services {
+    padding: 50px 0;
+    background: #f8f8f8;
+    text-align: center;
+}
+.services h2 {
+    margin-bottom: 30px;
+    font-size: 28px;
+    color: #4a148c;
+}
+.service-cards {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.card {
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.card h3 {
+    margin-bottom: 10px;
+    color: #4a148c;
+}
+
+.service-image {
+    width: 100%;
+    height: auto; 
+    border-radius: 10px; 
+    margin-bottom: 15px;
+    border: 1px solid #000; 
+}
+
+/* Pricing Section */
+.pricing {
+    padding: 50px 0;
+    background: #fff;
+    text-align: center;
+}
+.pricing h2 {
+    margin-bottom: 30px;
+    font-size: 28px;
+    color: #4a148c;
+}
+.pricing-table {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.pricing-card {
+    background-color: mediumpurple;
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.pricing-card h3 {
+    margin-bottom: 10px;
+    color: #fff;
+}
+.pricing-card p {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #fff;
+}
+.pricing-list {
+    background-color: antiquewhite;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #000;
+}
+
+.pricing-list li {
+    padding: 5px 0; /
+    font-size: 16px; 
+    color: #000; 
+    display: flex; 
+    align-items: center; 
+}
+
+/* About Us Section */
+.about {
+    padding: 50px 0;
+    background: #f8f8f8;
+}
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.about-text h2 {
+    margin-bottom: 30px;
+    font-size: 28px;
+    color: #4a148c;
+}
+.about-container p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #000;
+    text-align: justify;
+}
+.about-image {
+    flex: 1;
+    max-width: 300px;
+    margin-right: 30px;
+    display: flex;
+    justify-content: center;
+}
+.about-img img {
+    width: 100%;
+    max-width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    object-fit: cover;  
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-img {
+    flex: 1;
+    max-width: 300px;
+    margin-right: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.about-img img {
+    width: 100%;
+    max-width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    object-fit: cover;  
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-text {
+    flex: 2;
+    text-align: left;
+    max-width: 600px;
+}
+
+
+.about-text p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #000;
+    text-align: justify;
+}
+
+/* Footer */
+.footer {
+    background-color: #4a148c;
+    color: #fff;
+    padding: 20px 0; 
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;  
+    justify-content: space-between;  
+    align-items: left;  
+    flex-wrap: wrap;  
+    font-size: 16px;
+}
+
+.footer h3 {
+    color: #ffd700; 
+    margin-bottom: 10px;
+}
+
+.footer-contact {
+    margin-right: 20px; 
+}
+
+.footer-contact p {
+    margin: 5px 0; 
+}
+
+.newsletter {
+    margin-right: 20px; 
+}
+
+.newsletter form {
+    display: flex;
+    gap: 10px; 
+}
+.newsletter form button{
+    padding: 10px 20px;
+    margin-right: 10px;
+    background-color: #ffd700;
+    border: none;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: bold;
+    color: #4a148c;
+    border-radius: 5px;
+}
+
+.footer-hours {  
+}
+
+
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column; 
+        align-items: flex-start; 
+    }
+}
+
+.footer-info {
+    margin-bottom: 10px;
+}
+.footer-info p {
+    margin: 5px 0;
+}
+.footer-info p a {
+    text-decoration: none;
+    color: #ffd700;
+    font-size: 16px;
+}
+.footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+.footer ul li a {
+    text-decoration: none;
+    color: #ffd700;
+    font-size: 16px;
+}
+.footer ul li a:hover {
+    color: #fff;
+}
